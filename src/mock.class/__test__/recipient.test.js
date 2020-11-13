@@ -10,7 +10,7 @@ describe("acceptInjection", () => {
     jest.doMock("../covid19Vaccine", () => {
       return jest.fn().mockImplementation(() => {
         return {
-          composition: [],
+          composition: ["Sugar"],
         };
       });
     });
